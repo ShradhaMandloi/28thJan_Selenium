@@ -1,10 +1,9 @@
 package WebDriverMethods;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebDriver.Window;
+
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import graphql.execution.instrumentation.tracing.TracingInstrumentation.Options;
 
 public class MaximizeMethod {
 

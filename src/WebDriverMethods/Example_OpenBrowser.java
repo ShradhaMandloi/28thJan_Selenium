@@ -11,7 +11,7 @@ public class Example_OpenBrowser {
 		// TODO Auto-generated method stub
 		
 		// path setup of specific browser
-	//	System.setProperty("webdriver.chrome.driver", "Path of chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "Path of chromedriver.exe");
 		
 		
 		ChromeDriver C=new ChromeDriver();  // object creation to open a browser

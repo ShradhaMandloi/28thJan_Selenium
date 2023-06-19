@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class PBMobNumPage1 {
-	@FindBy(xpath ="(//input[@type='number'])[2]") private WebElement mobnum;
+	@FindBy(xpath ="(//input[@type='number'])[2]") private WebElement mobNum;
 	@FindBy(xpath ="(//span[text()='Sign in with Password'])[2]") private WebElement signInWithPwd;
 
 	//second way of initialization of private elements
@@ -27,7 +27,7 @@ public class PBMobNumPage1 {
 	}
 	public void inpPBMobNumPage1(String mobilenum) {
 		
-		mobnum.sendKeys(mobilenum);
+		mobNum.sendKeys(mobilenum);
 	}
 	public void clickOnSignInPwd() {
 		signInWithPwd.click();

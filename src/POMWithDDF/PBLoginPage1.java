@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class PBLoginPage1 {
+	
 	//declaration
 	@FindBy(xpath ="//a[text()='Sign in']") private WebElement signIN; ////private WebElement signIN=driver.findElement(By.xpath(""))
 	

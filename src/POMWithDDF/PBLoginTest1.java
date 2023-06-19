@@ -34,19 +34,26 @@ public class PBLoginTest1 {
 		login.clickOnPBLoginPageSignIn();
 		
 		PBMobNumPage1 mobNum=new PBMobNumPage1(d);
+		
 		String mobilenum=sh.getRow(0).getCell(0).getStringCellValue();
 		mobNum.inpPBMobNumPage1(mobilenum);
 		mobNum.clickOnSignInPwd();
 		Thread.sleep(2000);
 		
 		PBPwdPage1 pwd= new PBPwdPage1(d);
+		
 		String password=sh.getRow(0).getCell(1).getStringCellValue();
 		pwd.inpPBPwdPage1(password);
 		pwd.clickOnSign();
 		Thread.sleep(2000);
 		
 		PBHomePage1 myacc= new PBHomePage1(d);
+		
 		myacc.openDDoptionOfMyAccount();
+		Thread.sleep(2000);
+		
+		PBMyAccPage1 myAcc=new PBMyAccPage1(d);
+		myAcc.clickPBMyAccPageMyProfile();
 		Thread.sleep(2000);
 		
 		PBProfilePage1 myprofile=new PBProfilePage1(d);

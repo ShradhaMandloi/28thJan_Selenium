@@ -9,7 +9,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class PBProfilePage1 {
-	@FindBy(xpath ="//input[@name='personName']") private WebElement name;
+	
+	@FindBy(xpath ="//input[@name='personName']") private WebElement fullName;
 	WebDriver d1;
 	
 	public PBProfilePage1(WebDriver d) {
@@ -25,7 +26,7 @@ public class PBProfilePage1 {
 	}
 	public void verifyProfilePageFullName1(String expname2) {
 		
-		String accname=name.getAttribute("value");
+		String accname=fullName.getAttribute("value");
 		
 		
 		if(accname.equals(expname2)) {

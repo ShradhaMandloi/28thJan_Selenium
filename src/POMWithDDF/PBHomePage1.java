@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class PBHomePage1 {
-	@FindBy(xpath ="//div[text()='My Account']" )private WebElement Myacc;
+	@FindBy(xpath ="//div[text()='My Account']" )private WebElement myAcc;
 	WebDriver d1;
 	
 	public PBHomePage1(WebDriver d) {
@@ -18,7 +18,7 @@ public class PBHomePage1 {
 	public void openDDoptionOfMyAccount() {
 		
 		Actions A= new Actions(d1);
-		A.moveToElement(Myacc).perform();
+		A.moveToElement(myAcc).perform();
 	}
 	
 }

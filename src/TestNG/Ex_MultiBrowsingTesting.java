@@ -4,9 +4,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
 
 public class Ex_MultiBrowsingTesting {
-
+	
+	@Test
 	public void TC1(String browsername) throws InterruptedException {
 		
 		WebDriver d=null;

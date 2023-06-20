@@ -33,7 +33,7 @@ public class PBLoginTest2 {
 	public void OpenBrowser() throws EncryptedDocumentException, IOException {
 		
 		FileInputStream file= new FileInputStream("C:\\Users\\DC\\Desktop\\exceldata\\DDF data.xlsx");
-		Sheet sh= WorkbookFactory.create(file).getSheet("DDF");
+		sh= WorkbookFactory.create(file).getSheet("DDF");
 		
 		d= new ChromeDriver();
 		d.manage().window().maximize();
@@ -73,14 +73,15 @@ public class PBLoginTest2 {
 		String actresult=myprofile.getPBProfilePagefullName();
 		String expresult=sh.getRow(0).getCell(2).getStringCellValue();
 		Assert.assertEquals(actresult, expresult,"Failed: both results are different");
-		
+		Thread.sleep(4000);
 		
 	}
 	
 	@AfterMethod
 	public void LogoutApp() {
-	
+		myprofile.switchToChildWindow1();
 		myAcc.clickPBMyAccPageSignOut();
+
 	
 	}
 	@AfterClass

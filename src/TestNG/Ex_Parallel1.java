@@ -2,9 +2,10 @@ package TestNG;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 public class Ex_Parallel1 {
-
+	@Test
 	public void openFacebookBrowser() throws InterruptedException {
 		
 		WebDriver d= new ChromeDriver();

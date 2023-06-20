@@ -2,8 +2,10 @@ package TestNG;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 public class Ex_Parallel2 {
+	@Test
 	public void openGoogleBrowser() throws InterruptedException {
 		
 		WebDriver d= new ChromeDriver();

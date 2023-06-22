@@ -23,6 +23,12 @@ public class PBProfilePage4 {
 		ArrayList<String> ar=new ArrayList<>(allIds);
 		d1.switchTo().window(ar.get(1));
 	}
+	public void switchToChildWindow1() {
+		
+		Set<String> allIds=d1.getWindowHandles();
+		ArrayList<String> ar=new ArrayList<>(allIds);
+		d1.switchTo().window(ar.get(0));
+	}
 	
 	public String getPBProfilePagefullName() {
 		String accname=fullName.getAttribute("value");

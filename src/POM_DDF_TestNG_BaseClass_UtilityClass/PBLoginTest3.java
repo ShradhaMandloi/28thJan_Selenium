@@ -83,7 +83,7 @@ public class PBLoginTest3 extends BaseClass_ToOpenBrowser{
 	
 	@AfterMethod
 	public void LogoutApp() {
-	
+		myprofile.switchToChildWindow1();
 		myAcc.clickPBMyAccPageSignOut();
 	
 	}

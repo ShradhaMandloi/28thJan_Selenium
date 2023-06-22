@@ -92,7 +92,7 @@ public class PBLoginTest4 extends BaseClass_ToOpenBrowser{
 			UtilityClass.captureSS(d, TCID);
 		}
 		
-		
+		myprofile.switchToChildWindow1();
 		myAcc.clickPBMyAccPageSignOut();
 	
 	}

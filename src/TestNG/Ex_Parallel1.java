@@ -12,6 +12,7 @@ public class Ex_Parallel1 {
 		d.manage().window().maximize();
 		d.get("https://www.facebook.com/");
 		
+		
 		Thread.sleep(2000);
 		d.close();
 	}

@@ -16,7 +16,8 @@ public class PrintAllDataOfRow {
 		FileInputStream file= new FileInputStream("C:\\Users\\DC\\Desktop\\screenshot\\PARAMETERIZATION_EXCEL.xlsx");
 		Sheet sh=WorkbookFactory.create(file).getSheet("Sheet3");
 		
-		int lastcellindex=sh.getRow(0).getLastCellNum()-1;
+		int lastcellindex=sh.getRow(0).getLastCellNum();
+		System.out.println(lastcellindex);
 		
 		for(int i=0; i<=lastcellindex; i++) {
 			String value=sh.getRow(0).getCell(i).getStringCellValue();

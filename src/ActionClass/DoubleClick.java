@@ -16,6 +16,7 @@ public class DoubleClick {
 		d.get("https://demo.guru99.com/test/simple_context_menu.html");
 		
 		System.out.println("...............................");
+		System.out.println("...............................");
 		Thread.sleep(500);
 		
 		//step1

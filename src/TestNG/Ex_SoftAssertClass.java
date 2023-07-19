@@ -22,4 +22,18 @@ public class Ex_SoftAssertClass {
 		
 		soft.assertAll();
 	}
+	public void TC6() {
+		SoftAssert soft= new SoftAssert();
+		
+		String actresult="hello";
+		String expresult="hello";
+		
+		soft.assertEquals(actresult, expresult, "Failed TC");
+		
+		
+		boolean result=true;
+		soft.assertTrue(result,"Failed TC");
+		
+		soft.assertAll();
+	}
 }

@@ -12,7 +12,7 @@ public class IsMultipleSelectForMultipleSelect {
 		// TODO Auto-generated method stub
 
 		WebDriver d=new ChromeDriver();
-		d.get("file:///C:/Users/DC/Desktop/xyz.html");
+		d.get("C:\\Users\\DC\\Desktop\\screenshot/xyz.html");
 		
 		WebElement Country=d.findElement(By.xpath("//select[@multiple='true']"));
 		

@@ -10,7 +10,7 @@ public class GetDataFromTable {
 		// TODO Auto-generated method stub
 		WebDriver d=new ChromeDriver();
 		d.manage().window().maximize();
-		d.get("file:///C:/Users/DC/Desktop/Htmlsample5.html");
+		d.get("C:\\Users\\DC\\Desktop\\screenshot/Htmlsample5.html");
 		
 		String text=d.findElement(By.xpath("//table[@id='1234']//tr[2]/td[2]")).getText();
 		System.out.println(text);

@@ -30,7 +30,7 @@ public class SelectOctOptionByUsingArrowEndKey {
 		A.click(month).perform();
 		Thread.sleep(2000);
 		
-		//step4 navigate to 1st option using home key i.e jan 
+		//step4 navigate to 1st option using end key i.e dec 
 		A.sendKeys(Keys.END).perform();
 		Thread.sleep(2000);
 		

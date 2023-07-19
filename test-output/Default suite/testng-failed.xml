@@ -3,15 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="POM_DDF_TestNG_BaseClass_UtilityClass_CaptureSSofFailedTC.PBLoginTest4">
+      <class name="TestNG.Ex_SoftAssertClass">
         <methods>
-          <include name="CloseBrowser"/>
-          <include name="VerifyFullName"/>
-          <include name="LogoutApp"/>
-          <include name="OpenBrowser"/>
-          <include name="LoginApp"/>
+          <include name="TC5"/>
         </methods>
-      </class> <!-- POM_DDF_TestNG_BaseClass_UtilityClass_CaptureSSofFailedTC.PBLoginTest4 -->
+      </class> <!-- TestNG.Ex_SoftAssertClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

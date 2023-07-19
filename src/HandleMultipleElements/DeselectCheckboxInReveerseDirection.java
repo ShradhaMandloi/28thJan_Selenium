@@ -12,7 +12,7 @@ public class DeselectCheckboxInReveerseDirection {
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 		WebDriver d= new ChromeDriver();
-		d.get("file:///C:/Users/DC/Desktop/abc.html");
+		d.get("C:\\Users\\DC\\Desktop\\screenshot/abc.html");
 		
 	List<WebElement>	MultipleCheckbox=d.findElements(By.xpath("//input[@type='checkbox']"));
 	System.out.println(MultipleCheckbox.size());

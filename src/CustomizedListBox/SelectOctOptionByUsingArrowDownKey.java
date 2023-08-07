@@ -1,4 +1,4 @@
-package HandlinfOfCustomizedListBox;
+package CustomizedListBox;
 
 import java.time.Duration;
 
@@ -9,10 +9,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public class SelectOctOptionByUsingArrowEndKey {
+public class SelectOctOptionByUsingArrowDownKey {
 
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
+
 		WebDriver d=new ChromeDriver();
 		d.get("https://www.facebook.com/");
 	
@@ -30,13 +31,13 @@ public class SelectOctOptionByUsingArrowEndKey {
 		A.click(month).perform();
 		Thread.sleep(2000);
 		
-		//step4 navigate to 1st option using end key i.e dec 
-		A.sendKeys(Keys.END).perform();
+		//step4 navigate to 1st option using home key i.e jan 
+		A.sendKeys(Keys.HOME).perform();
 		Thread.sleep(2000);
 		
 		//step5
-		for(int i=1; i<=2;i++) {
-			A.sendKeys(Keys.ARROW_UP).perform();
+		for(int i=1; i<=9;i++) {
+			A.sendKeys(Keys.ARROW_DOWN).perform();
 			Thread.sleep(2000);	
 		}
 		//step6
